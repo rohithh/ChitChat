@@ -1,0 +1,12 @@
+<div id="search-component" style="text-align:center">
+  <h4>Hello! What is your name?</h4>
+  <form>
+    <input  [(ngModel)]="name"  name="search" id="search-box" required/>
+    <a routerLink="/chat/{{ name }}"><button > Go!</button></a>
+    <br>
+  </form>
+  <br/>
+  <div>
+    Note : Please enter a name or directly enter into the url '/chat/Name'
+  </div>
+</div>
